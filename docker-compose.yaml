@@ -9,8 +9,6 @@ services:
       - "13500"
     ports:
       - "13500:13500"
-    volumes:
-      - "./api/api:/app/api"
     env_file: settings.env
 
   dashboard:
@@ -20,5 +18,5 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - "./dashboard:/app"
       - "/app/node_modules"
+      

@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  api:
+    volumes:
+      - "./api/api:/app/api"
+    
+  dashboard:
+    volumes:
+      - "/app/node_modules"
+      - "./flask/build:/app/build"
